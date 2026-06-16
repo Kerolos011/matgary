@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());const c=document.querySelector('[data-cart-count]');if(c)c.textContent=cart().reduce((s,i)=>s+i.qty,0);});
